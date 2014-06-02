@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <display-name>weba</display-name>
     <servlet>
-        <servlet-name>conejo</servlet-name>
-        <servlet-class>alex.cuentas.controlador.ServletCrearCuenta</servlet-class>
+        <servlet-name>ServletCrearCuenta</servlet-name>
+        <servlet-class>gonzalez.cuentas.controladores.ServletCrearCuenta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletRegistro</servlet-name>
+        <servlet-class>gonzalez.cuentas.controladores.ServletRegistro</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>conejo</servlet-name>
-        <url-pattern>/chapo.guzman</url-pattern>
+        <servlet-name>ServletCrearCuenta</servlet-name>
+        <url-pattern>/ServletCrearCuenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRegistro</servlet-name>
+        <url-pattern>/ServletRegistro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
 </web-app>
