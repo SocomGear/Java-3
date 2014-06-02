@@ -11,5 +11,15 @@ package com.registro.model;
  * @author socom_000
  */
 public class Persona {
+    private Perro perro;
+
+    public Perro getPerro() {
+        return perro;
+    }
+
+    public void setPerro(Perro perro) {
+        this.perro = perro;
+    }
+    
     
 }

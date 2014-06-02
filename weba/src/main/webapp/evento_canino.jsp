@@ -12,6 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>
+            Bienvenido al evento canino
+        </h1>
+        <form action="registro" method="Post">
+            <input type="submit" value="obtener registro"  />
+        </form>
     </body>
 </html>

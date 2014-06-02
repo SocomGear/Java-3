@@ -10,13 +10,14 @@ package com.registro.model;
  *
  * @author socom_000
  */
-public class Probarregistro {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Probarregistro {    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Perro p=new Perro();
+        p.setNombre("wisky");
+       Persona a=new Persona();
+       a.setPerro(p);
+       //El siguiente es lo que resivira el cliente en el paso 4
+       System.out.println(a.getPerro().getNombre());
     }
     
 }

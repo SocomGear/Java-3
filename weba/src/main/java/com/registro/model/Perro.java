@@ -11,5 +11,18 @@ package com.registro.model;
  * @author socom_000
  */
 public class Perro {
+    private String nombre;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public String ObtenerRegistro(){
+        return "El perrito que registraste es: "+nombre;
+    }
     
 }
